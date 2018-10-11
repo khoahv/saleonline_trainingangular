@@ -1,0 +1,13 @@
+<!-- BEGIN LAPTOP -->
+<section id="laptop"  class="container-fluid pt-5 pb-5">
+  <h1 class="text-center">BEST LAPTOP</h1>
+  <div class="row">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-lg-3" *ngFor="let item of listLapTop" style="padding-right: 127px;padding-left: 15px;" >
+        <app-laptop-item  [itemLapTop]="item" (eventClickDetail)="recviveEventDetail($event)"></app-laptop-item>
+      </div>
+      <app-dialog2 [title]="title" [description]="description" [price]="price"></app-dialog2>
+    </div>
+  </div>
+</section>
+<!-- END LAPTOP -->
